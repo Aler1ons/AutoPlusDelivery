@@ -17,8 +17,8 @@ async def handler(event):
         await event.reply('+')
         me = await client.get_me()
         chat = await event.get_chat()
-        chat_name = getattr(chat, 'title', 'Приватний чат')
-        await client.send_message(me.id, f"✅ Відповів на 'доставка' в чаті: {chat_name}")
+        chat_name = getattr(chat, 'title', 'Тест')
+        await client.send_message(me.id, f"✅ Відповів на 'доставка' в чаті: Тест")
 
 client.start()
 print("Бот працює на Railway!")
